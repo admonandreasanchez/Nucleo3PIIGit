@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Calculadora de IVA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>Calculadora de IVA</h2>
+    <form action="/calcularivaServlet" method="post">
+        <label for="producto">Nombre del Producto:</label>
+        <input type="text" id="producto" name="producto" required><br><br>
+        <label for="costo">Costo del Producto:</label>
+        <input type="text" id="costo" name="costo" pattern="\d+(\.\d{2})?" title="Ingrese un número válido (puede incluir decimales)" required><br><br>
+        <input type="submit" value="Calcular IVA">
+    </form>
+</body>
+</html>
+
